@@ -8,10 +8,18 @@ tprint("PORK", space=3)
 tprint("Enter the Madness")
 #Creating master function to run game
 def runGame():
+#Intro text
     print("You are named Hammy\n")
     print("You are a pig and you must make your way through the forest.\n")
     print("Don't become bacon!\n")
-
+#Creating a while loop to keep track of health and end the game if Hammy dies
+    health = 3
+    while health != 0:
+        health -= 1 #This is here just for testing the loop
+        print("You are starting your journey now!") #This is a placeholder and will be replaced with game logic
+        if health <= 0:
+            print("You have become bacon!")
+            break
 #Getting yes or no input for game start
 #gameTitle function contains the game start secion so invalid inputs do not result in an exit
 def gameTitle():
