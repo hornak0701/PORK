@@ -12,3 +12,5 @@ This list will possibly be added to further in development
 - [ ] Working Combat System
 - [ ] Game Over condition/screen
 - [ ] Winning conditions/screen
+### Python Libraries used
+- art
