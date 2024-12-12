@@ -6,8 +6,8 @@ The game centers on the character of Hammy as he makes his way through the game 
 This list will possibly be added to further in development
 - [x] Title screen
 - [x] User able to start or exit game from the title screen
-- [ ] Directional Game Map
-- [ ] Working Health System
+- [ ] Directional Game Map (WIP)
+- [x] Working Health System
 - [ ] Working Inventory System
 - [ ] Working Combat System
 - [ ] Game Over condition/screen
