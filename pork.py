@@ -4,8 +4,10 @@ Initial code by bombercode
 '''
 # Importing the art lib to make the game title look a little cooler
 from art import *
+from colored import fg, attr #Importing colored to help color some text
+import porklogic #Importing functions from game logic file
 tprint("PORK", space=3)
-tprint("Enter the Madness")
+health = 3 #Making this a global variable so it can be touched by all functions if needed
 #Creating master function to run game
 def runGame():
 #Intro text
@@ -13,10 +15,9 @@ def runGame():
     print("You are a pig and you must make your way through the forest.\n")
     print("Don't become bacon!\n")
 #Creating a while loop to keep track of health and end the game if Hammy dies
-    health = 3
     while health != 0:
-        health -= 1 #This is here just for testing the loop
-        print("You are starting your journey now!") #This is a placeholder and will be replaced with game logic
+        porklogic.sectionZero()
+# Tracking player health game over condition here
         if health <= 0:
             print("You have become bacon!")
             break
