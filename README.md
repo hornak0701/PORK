@@ -7,6 +7,7 @@ This list will possibly be added to further in development
 - [x] Title screen
 - [x] User able to start or exit game from the title screen
 - [ ] Directional Game Map (WIP)
+- [x] Logic to traverse map
 - [x] Working Health System
 - [ ] Working Inventory System
 - [ ] Working Combat System
@@ -14,3 +15,4 @@ This list will possibly be added to further in development
 - [ ] Winning conditions/screen
 ### Python Libraries used
 - art
+- colored
