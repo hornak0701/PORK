@@ -24,9 +24,43 @@ def sectionZero():
                 print(fg("red") + "Try again" + attr(0)) #Adding in the colored lib functions to color text red
 #Section One logic
 def sectionOne():
-    print("You are now in a grass field")
+    print("You are now in a grassy field")
     exit()
 #Section Two logic
 def sectionTwo():
     print("You are now on a gravel road")
+    exit()
+# Section 3 Logic
+def sectionThree():
+    print("Welcome to section three!")
+    exit()
+
+# Section 4 Logic
+def sectionFour():
+    print("Welcome to section four!")
+    exit()
+
+# Section 5 Logic
+def sectionFive():
+    print("Welcome to section five!")
+    exit()
+
+# Section 6 Logic
+def sectionSix():
+    print("Welcome to section six!")
+    exit()
+
+# Section 7 Logic
+def sectionSeven():
+    print("Welcome to section seven!")
+    exit()
+
+# Section 8 Logic
+def sectionEight():
+    print("Welcome to section eight!")
+    exit()
+
+# Section 9 Logic
+def sectionNine():
+    print("Welcome to section nine!")
     exit()
