@@ -8,13 +8,13 @@ The game centers on the character of Hammy as he makes his way through the game 
 This list will possibly be added to further in development
 - [x] Title screen
 - [x] User able to start or exit game from the title screen
-- [ ] Directional Game Map (WIP)
+- [x] Directional Game Map
 - [x] Logic to traverse map
 - [x] Working Health System
 - [ ] Working Inventory System
 - [ ] Working Combat System
-- [ ] Game Over condition/screen
-- [ ] Winning conditions/screen
+- [ ] Game Over condition/screen(WIP)
+- [ ] Winning conditions/screen(WIP)
 ### Python Libraries used
 - art
 - colored
