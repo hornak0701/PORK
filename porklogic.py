@@ -108,8 +108,32 @@ def sectionTwo():
 
 # Section 3 Logic
 def sectionThree():
-  print("Welcome to section three!")
-  exit()
+  print("After some time walking through rocky terrain...")
+  print("You come to the entrance a dark and damp cave.")
+  print("Inside the cave you hear some grunts and rustling around.")
+  print("To your North you see a cliff with what could be a large drop")
+  print("Moving East will take you into the cave proper.")
+  sectionThreeMove = input("Which direction will you go?\n").lower()
+  # North
+  if sectionThreeMove == "north":
+    print("You head to the north...\n")
+    sectionSeven()
+  # East
+  elif sectionThreeMove == "east":
+    print("You make your way into the cave...\n")
+    sectionFour()
+  # South
+  elif sectionThreeMove == "south":
+    print(fg("red") + "You just came from that direction!\n" + attr(0))
+    sectionThree()
+  # West
+  elif sectionThreeMove == "west":  # blocking off west to avoid confusion
+    print(fg("red") + "You cannot go that way right now...\n" + attr(0))
+    sectionThree
+# Invalid input
+  else:
+    print(fg("red") + "Try again" + attr(0))
+    sectionThree()
 
 
 # Section 4 Logic
