@@ -11,8 +11,8 @@ This list will possibly be added to further in development
 - [x] Directional Game Map
 - [x] Logic to traverse map
 - [x] Working Health System
-- [ ] Working Inventory System
-- [ ] Working Combat System
+- [ ] ~~Working Inventory System~~
+- [ ] Working Combat System(WIP)
 - [ ] Game Over condition/screen(WIP)
 - [ ] Winning conditions/screen(WIP)
 ### Python Libraries used
