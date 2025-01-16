@@ -9,11 +9,13 @@ Initial code by coderchameleon
 # Library imports
 from art import *  # Importing the art lib to make title look cooler
 from colored import fg, attr  # Importing colored to help color some text
-
+import time  # Importing this to implement some waits in between prints
+health = 3
 
 # Section Zero logic
 def sectionZero():
   print("You have just escaped the bacon factory...")
+  time.sleep(1)  # Testing 1 sec wait between print statements
   print("Behind you is the bacon factory, but ahead of you are", end=" ")
   print("different paths you can take")
   print("You can go back into the factory and accept your fate,", end=" ")
@@ -82,7 +84,7 @@ def sectionTwo():
   print("To your North you see what looks like the edge of a village.")
   print("To your East you see some rocky hills.")
   print("South you see where you escaped the factory")
-  print("To your West you see the edge of a lake.")
+  # print("To your West you see the edge of a lake.")  # Cut content
   sectionTwoMove = input("Which direction will you go?\n").lower()
   # North
   if sectionTwoMove == "north":
@@ -98,8 +100,8 @@ def sectionTwo():
     sectionTwo()
   # West
   elif sectionTwoMove == "west":
-    print("You head west \n")
-    sectionSix()
+    print(fg("red") + "You cannot go that way right now...\n" + attr(0))
+    sectionTwo()
   # Invalid input
   else:
     print(fg("red") + "Try again" + attr(0))
@@ -137,21 +139,51 @@ def sectionThree():
 
 
 # Section 4 Logic
+# TODO tie this section into the combat module
 def sectionFour():
   print("Welcome to section four!")
+  print("This is a placeholder for the bear fight")
   exit()
 
 
 # Section 5 Logic
 def sectionFive():
-  print("Welcome to section five!")
-  exit()
+  print("You come to the edge of a village.")
+  print("There are some sparse buildings near you but more in the distance.")
+  print("If you proceed north into the town you might be spotted.")
+  print("To the east are some cliffs you could not get past.")
+  print("You have enough time to go back to the gravel road.")
+  sectionFiveMove = input("Which direction will you go?\n").lower()
+  # North
+  if sectionFiveMove == "north":  # Going into win condition section
+    print("You head further into the village...\n")
+    sectionNine()
+  # East
+  elif sectionFiveMove == "east":  # Blocking off east
+   print(fg("red") + "You cannot go that way right now...\n" + attr(0))
+   sectionNine()
+  # South
+  elif sectionFiveMove == "south":
+    print("You head back to the gravel road quickly.")
+    sectionTwo()
+  # West
+  elif sectionFiveMove == "west":
+    print(fg("red") + "You cannot go that way right now...\n" + attr(0))
+    sectionFive()
+  # Invalid Input
+  else:
+    print(fg("red") + "Try again" + attr(0))
+    sectionFive()
 
 
-# Section 6 Logic
+'''
+This section below is going to be cut for scope purposes
+
+# Section 6 Logic (Cut)
 def sectionSix():
   print("Welcome to section six!")
   exit()
+'''
 
 
 # Section 7 Logic
@@ -160,10 +192,14 @@ def sectionSeven():
   exit()
 
 
-# Section 8 Logic
+'''
+This section below is going to be cut for scope purposes
+
+# Section 8 Logic (Cut)
 def sectionEight():
   print("Welcome to section eight!")
   exit()
+'''
 
 
 # Section 9 Logic

@@ -8,6 +8,7 @@ Initial code by coderchameleon
 from art import *  # Importing the art lib to make the game title look a little cooler
 from colored import fg, attr  # Importing colored to help color some text
 import porklogic  # Importing functions from game logic file
+import time  # Importing to start adding in waits between print statements
 tprint("PORK", space=3)  # Printing the game title, using tprint to make it look fancy
 health = 3  # Making this a global variable so it can be touched by all functions if needed
 # Creating master function to run game
@@ -24,10 +25,10 @@ def runGame():
     if health <= 0:
       print("You have become bacon!")
       break
+
+
 # Getting yes or no input for game start
 # gameTitle function contains the game start secion so invalid inputs do not result in an exit
-
-
 def gameTitle():
   gameStart = input("Do you dare enter? (y/n)\n").lower()  # Using lowercase function
 # Actions resulting from input
