@@ -19,13 +19,18 @@ def runGame():
   print("You do not have time to backtrack so choose wisely!\n")
   print("Don't become bacon!\n")
 # Creating a while loop to keep track of health and end the game if Hammy dies
+# Like below, I do not think this is working as intended, but functions
   while health != 0:
     porklogic.sectionZero()
-# Tracking player health game over condition here
-    if health <= 0:
-      print("You have become bacon!")
-      break
+'''
+Tracking player health game over condition here
+Currently I do not think this is actually working, maybe move to this
+function over to porklogic?
 
+if health <= 0:
+  print("You have become bacon!")
+  break
+'''
 
 # Getting yes or no input for game start
 # gameTitle function contains the game start secion so invalid inputs do not result in an exit
@@ -43,5 +48,5 @@ def gameTitle():
     gameTitle()  # This allows invalid key inputs to loop back for another input
 
 
-# Running gameTitle funciton to start the game
+# Running gameTitle function to start the game
 gameTitle()

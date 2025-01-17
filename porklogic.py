@@ -10,7 +10,9 @@ Initial code by coderchameleon
 from art import *  # Importing the art lib to make title look cooler
 from colored import fg, attr  # Importing colored to help color some text
 import time  # Importing this to implement some waits in between prints
-health = 3
+# Global variables declared
+health = 3  # For tracking Hammy's health
+disguise = False  # Checking if Hammy has the bear disguise
 
 # Section Zero logic
 def sectionZero():
@@ -187,9 +189,24 @@ def sectionSix():
 
 
 # Section 7 Logic
-def sectionSeven():
-  print("Welcome to section seven!")
-  exit()
+def sectionSeven():  # This is going to cause Hammy 1 HP damage
+  global health  # Working with the global health varible
+  health -= 1  # Dropping Hammy's health down by 1
+  print("As you walk you come toward the edge of a cliff")
+  print("You slowly walk foward and look down and see it is steep")
+  time.sleep(1)
+  print("You decide to slowly start descend down the cliff...")
+  time.sleep(3)
+  print("Suddenly one of your hoof holds gives way and you fall!")
+  time.sleep(1)
+  print("You land on a small outcropping a ways down from where you fell.")
+  time.sleep(1)
+  print(fg("red") + "You are alive but a little hurt" + attr(0))
+  print("You decide it is too dangerous and make your way back up the cliff")
+  time.sleep(2)
+  print("You make it back up okay and set back toward the small cave you came from...\n")
+  print(fg("red") + "You walk with a slight limp\n" + attr(0))
+  sectionThree()
 
 
 '''
@@ -204,5 +221,29 @@ def sectionEight():
 
 # Section 9 Logic
 def sectionNine():
-  print("Welcome to section nine!")
-  exit()
+  print("You slowly try to sneak further into the village...")
+  time.sleep(1)
+  print("You carefully try to make your way through without attracting attention")
+  time.sleep(3)
+  print("You are making good progress until...")
+  time.sleep(2)
+  # This will be fleshed out more soon and is mostly a placeholder
+  # TODO flesh this text out more.
+  if disguise == True:
+    print("You hear someone shriek \"eek! A bear!\"")
+    print("Everyone ran away!")
+    time.sleep(2)
+    print("Congragulations! You have escaped!")
+    exit()
+  elif disguise == False:
+    print("You hear someone yell, \"Grab that bacon!\"")
+    print("You have been caught!\n")
+    print("-----------------------")
+    time.sleep(3)
+    tprint("You are bacon", space=1)
+    exit()
+  else:  # Error handling just in case
+    print("Unhandled error...restarting")
+    time.sleep(1)
+    print("----------------------------")
+    sectionOne()  
