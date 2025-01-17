@@ -18,3 +18,4 @@ This list will possibly be added to further in development
 ### Python Libraries used
 - art
 - colored
+- time

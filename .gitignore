@@ -4,3 +4,5 @@ __pycache__/
 *.swp
 *.swo
 .DS_Store
+pork_map.drawio
+pork.geany
