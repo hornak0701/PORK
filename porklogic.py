@@ -17,11 +17,13 @@ disguise = False  # Checking if Hammy has the bear disguise
 # Section Zero logic
 def sectionZero():
   print("You have just escaped the bacon factory...")
-  time.sleep(1)  # Testing 1 sec wait between print statements
+  time.sleep(1)  # Adding 1 sec wait between some print statements
   print("Behind you is the bacon factory, but ahead of you are", end=" ")
   print("different paths you can take")
+  time.sleep(1)
   print("You can go back into the factory and accept your fate,", end=" ")
   print("or you start your journey")
+  time.sleep(1)
   # Using the lowercase function below to make input easier to deal with
   sectionZeroMove = input("Which direction do you go?\n").lower()
   # Determine next action based on input
@@ -52,8 +54,11 @@ def sectionOne():
   print("You are now in a grassy field.")
   print("To your South you see the smoke stacks of the bacon", end=" ")
   print("factory,it would be bad to go that way")
+  time.sleep(1)
   print("You see a thick forest to the East.")  # No go direction
+  time.wait(1)
   print("To the North you see some rocky hills past the field")
+  time.sleep(1)
   sectionOneMove = input("Which direction will you go?\n").lower()
   # Determine next action based on input
   # North (yes I know I was not consistent with the direction)
@@ -64,6 +69,7 @@ def sectionOne():
   elif sectionOneMove == "east":
     print("You start to head into the forest...\n")
     print("The trees and brush quickly becomes too thick to pass!\n")
+    time.sleep(1)
     print(fg("red") + "The terrain is too rough, you can't go that way!\n" + attr(0))
     sectionOne()
   # South
@@ -84,8 +90,11 @@ def sectionOne():
 def sectionTwo():
   print("You are now on a gravel road")
   print("To your North you see what looks like the edge of a village.")
+  time.sleep(1)
   print("To your East you see some rocky hills.")
+  time.sleep(1)
   print("South you see where you escaped the factory")
+  time.sleep(1)
   # print("To your West you see the edge of a lake.")  # Cut content
   sectionTwoMove = input("Which direction will you go?\n").lower()
   # North
@@ -114,9 +123,13 @@ def sectionTwo():
 def sectionThree():
   print("After some time walking through rocky terrain...")
   print("You come to the entrance a dark and damp cave.")
+  time.sleep(1)
   print("Inside the cave you hear some grunts and rustling around.")
+  time.sleep(1)
   print("To your North you see a cliff with what could be a large drop")
+  time.sleep(1)
   print("Moving East will take you into the cave proper.")
+  time.sleep(1)
   sectionThreeMove = input("Which direction will you go?\n").lower()
   # North
   if sectionThreeMove == "north":
@@ -152,9 +165,13 @@ def sectionFour():
 def sectionFive():
   print("You come to the edge of a village.")
   print("There are some sparse buildings near you but more in the distance.")
+  time.sleep(1)
   print("If you proceed north into the town you might be spotted.")
+  time.sleep(1)
   print("To the east are some cliffs you could not get past.")
+  time.sleep(1)
   print("You have enough time to go back to the gravel road.")
+  time.sleep(1)
   sectionFiveMove = input("Which direction will you go?\n").lower()
   # North
   if sectionFiveMove == "north":  # Going into win condition section

@@ -11,12 +11,15 @@ import porklogic  # Importing functions from game logic file
 import time  # Importing to start adding in waits between print statements
 tprint("PORK", space=3)  # Printing the game title, using tprint to make it look fancy
 health = 3  # Making this a global variable so it can be touched by all functions if needed
+time.sleep(2) # Pausing before the game starts
 # Creating master function to run game
 def runGame():
   # Intro text
   print("You are named Hammy\n")
   print("You are a pig and you must make your way through the forest.\n")
+  time.sleep(2)
   print("You do not have time to backtrack so choose wisely!\n")
+  time.sleep(2)
   print("Don't become bacon!\n")
 # Creating a while loop to keep track of health and end the game if Hammy dies
 # Like below, I do not think this is working as intended, but functions
