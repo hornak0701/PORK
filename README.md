@@ -13,8 +13,8 @@ This list will possibly be added to further in development
 - [x] Working Health System
 - [ ] ~~Working Inventory System~~
 - [ ] Working Combat System(WIP)
-- [ ] Game Over condition/screen(WIP)
-- [ ] Winning conditions/screen(WIP)
+- [x] Game Over condition/screen
+- [x] Winning conditions/screen
 ### Python Libraries used
 - art
 - colored
