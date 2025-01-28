@@ -11,7 +11,7 @@ Initial code by coderchameleon
 import porkcombat
 
 def bearEncounterGameTest():
-    print("TESTING Bear Encounter. Thanks for for testing this!")
+    print("TESTING Bear Encounter. Thanks for testing this!")
     # Encounter is set up in an attempt to simulate production environment (how the player might experience it)
     porkcombat.bearEncounterInitializer()
     print("TESTING Complete")
@@ -43,11 +43,14 @@ def main():
             else:
                 print("Please enter a number corresponding to one of the tests.")
         except:
-            print("Something wrong. Let's try that again.")
+            print("Something went wrong. Let's try that again.")
     print("Testing Ended")
 
 # This doesn't work like I expected. Currently, in order to run tests scripts, pork.gametitle() must be commented out
 if __name__ == "__main__":
     main()
-
-
+'''
+Currently this seems to just call and run the main pork.py script that then just launches the game as normal
+This could maybe indicate an issue with how the game in launched from pork.py --> porklogic.py
+as that seens to be indicated by the comment above on line 49 but that is not known for sure right now
+'''
