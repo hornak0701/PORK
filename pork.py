@@ -8,6 +8,7 @@ Initial code by coderchameleon
 from art import *  # Importing the art lib to make the game title look a little cooler
 from colored import fg, attr  # Importing colored to help color some text
 import porklogic  # Importing functions from game logic file
+import porkdebug # Importing this module for testing map sections
 import time  # Importing to start adding in waits between print statements
 tprint("PORK", space=3)  # Printing the game title, using tprint to make it look fancy
 health = 3  # Making this a global variable so it can be touched by all functions if needed
@@ -46,6 +47,8 @@ def gameTitle():
   elif gameStart == "n":
     print("Farewell!")
     exit()
+  elif gameStart == "debug": # Setting a hidden debug/test mode
+      porkdebug.debugMain()
   else:
     print("Valid inputs are y or n")
     gameTitle()  # This allows invalid key inputs to loop back for another input

@@ -56,7 +56,7 @@ def sectionOne():
   print("factory,it would be bad to go that way")
   time.sleep(1)
   print("You see a thick forest to the East.")  # No go direction
-  time.wait(1)
+  time.sleep(1)
   print("To the North you see some rocky hills past the field")
   time.sleep(1)
   sectionOneMove = input("Which direction will you go?\n").lower()
